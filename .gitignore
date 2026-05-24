@@ -4,7 +4,9 @@ CLAUDE.local.md
 node_modules/
 .next/
 prisma/dev.db
-.claude/
+.claude/*
+!.claude/settings.json
 tsconfig.tsbuildinfo
 src/generated/
 .playwright-mcp/
+claude-activity.log

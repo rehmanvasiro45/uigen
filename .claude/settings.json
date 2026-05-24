@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import sys,json,datetime; d=json.load(sys.stdin); f=d.get('tool_input',{}).get('file_path',''); open('claude-activity.log','a').write(datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')+' '+f+'\\n') if f else None\""
+          }
+        ]
+      }
+    ]
+  }
+}
