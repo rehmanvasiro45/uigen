@@ -7,3 +7,4 @@ prisma/dev.db
 .claude/
 tsconfig.tsbuildinfo
 src/generated/
+.playwright-mcp/
