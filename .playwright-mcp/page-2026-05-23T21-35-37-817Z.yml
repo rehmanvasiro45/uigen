@@ -1,0 +1,111 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e56]: Create a pricing card component
+            - img [ref=e59]
+          - generic [ref=e75]:
+            - img [ref=e78]
+            - generic [ref=e83]:
+              - generic [ref=e86]: Creating App.jsx
+              - separator [ref=e87]
+              - generic [ref=e90]: Creating PricingCard.jsx
+              - separator [ref=e91]
+              - generic [ref=e92]:
+                - paragraph [ref=e93]:
+                  - text: Done! Created a reusable
+                  - code [ref=e355]: PricingCard
+                  - text: "component with:"
+                - list [ref=e95]:
+                  - listitem [ref=e96]: Customizable name, price, description, and features
+                  - listitem [ref=e97]: Two button variants (primary and outline)
+                  - listitem [ref=e98]: Highlighted state for "Most Popular" cards
+                  - listitem [ref=e99]: Checkmark icons for features
+                  - listitem [ref=e100]: Responsive grid layout in the demo
+        - generic [ref=e19]:
+          - textbox "Describe the React component you want to create..." [ref=e20]
+          - button [disabled] [ref=e21]:
+            - img [ref=e22]
+    - separator [ref=e25]
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - tablist [ref=e30]:
+          - tab "Preview" [ref=e31]
+          - tab "Code" [selected] [ref=e32]
+        - generic [ref=e33]:
+          - button "Sign In" [ref=e34]
+          - button "Sign Up" [ref=e35]
+      - generic [ref=e103]:
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - generic [ref=e111] [cursor=pointer]:
+              - img [ref=e112]
+              - img [ref=e114]
+              - generic [ref=e116]: components
+            - generic [ref=e119] [cursor=pointer]:
+              - img [ref=e120]
+              - generic [ref=e125]: PricingCard.jsx
+          - generic [ref=e127] [cursor=pointer]:
+            - img [ref=e128]
+            - generic [ref=e133]: App.jsx
+        - separator [ref=e134]
+        - code [ref=e139]:
+          - generic [ref=e140]:
+            - generic [ref=e142]:
+              - generic [ref=e356]:
+                - generic [ref=e357] [cursor=pointer]: 
+                - generic [ref=e358]: "1"
+              - generic [ref=e149]: "2"
+              - generic [ref=e360]: "3"
+              - generic [ref=e362]: "4"
+              - generic [ref=e364]: "5"
+              - generic [ref=e366]: "6"
+              - generic [ref=e368]: "7"
+              - generic [ref=e168]: "8"
+              - generic [ref=e369]:
+                - generic [ref=e370] [cursor=pointer]: 
+                - generic [ref=e371]: "9"
+              - generic [ref=e172]: "10"
+              - generic [ref=e372]:
+                - generic [ref=e373] [cursor=pointer]: 
+                - generic [ref=e374]: "11"
+              - generic [ref=e376]: "12"
+              - generic [ref=e181]: "13"
+              - generic [ref=e381]: "14"
+              - generic [ref=e382]:
+                - generic [ref=e383] [cursor=pointer]: 
+                - generic [ref=e384]: "15"
+              - generic [ref=e386]: "16"
+              - generic [ref=e389]: "17"
+              - generic [ref=e392]: "18"
+            - generic [ref=e306]:
+              - generic [ref=e445]: "export default function PricingCard({"
+              - generic [ref=e447]: name,
+              - generic [ref=e449]: price,
+              - generic [ref=e451]: description,
+              - generic [ref=e453]: features,
+              - generic [ref=e455]: buttonText,
+              - generic [ref=e457]: buttonVariant = 'primary',
+              - generic [ref=e459]: highlighted = false
+              - generic [ref=e461]: "}) {"
+              - generic [ref=e463]: const baseClasses = "rounded-lg p-8
+              - generic [ref=e465]: const cardClasses = highlighted
+              - generic [ref=e467]: "? \"bg-white border-2 border-blue-500"
+              - generic [ref=e469]: ": \"bg-white border border-gray-200 shadow-md"
+              - generic [ref=e471]: transition-all duration-300";
+              - generic [ref=e473]: shadow-xl scale-105"
+              - generic [ref=e475]: hover:shadow-lg";
+              - generic [ref=e478]: "const buttonClasses = {"
+              - generic [ref=e480]: "primary: \"bg-blue-600 text-white"
+              - generic [ref=e482]: hover:bg-blue-700",
+              - generic [ref=e484]: "outline: \"border-2 border-gray-300"
+              - generic [ref=e486]: text-gray-900 hover:border-gray-400"
+              - generic [ref=e488]: "};"
+            - textbox "Editor content" [ref=e353]: "<span className=\"text-gray-700\">{feature}</span> </li> ))} </ul> </div> </div> ); }"
+  - alert [ref=e46]
+  - generic [ref=e354]:
+    - alert
+    - alert
