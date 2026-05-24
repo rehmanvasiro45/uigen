@@ -24,6 +24,8 @@ jobs:
       issues: write
       id-token: write
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Project Setup
         run: |
           npm run setup
@@ -36,12 +38,12 @@ jobs:
             The project is already set up with all dependencies installed. The server is already running at localhost:3000. Logs from it are begin written to logs.txt. If needed, you can query the db with the 'sqlite3' cli. If needed, use the mcp__Mcpserver set of tools to launch a browser and interact with the app.
           mcp_config: |
             {
-              "mcpServer":{
+              "mcpServers":{
                 "Mcpserver":{
                   "command":"npx",
                   "args":["@playwright/mcp@latest",
                   "--allowed-origins",
-                  "localhost:3000";cdn.tailwindcss.com;esm.sh"
+                  "localhost:3000;cdn.tailwindcss.com;esm.sh"
                   ]
                 }
               }
