@@ -26,6 +26,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Configure Claude Hooks
+        run: |
+          mkdir -p .claude
+          cat > .claude/settings.json << 'EOF'
+          {
+            "hooks": {
+              "PostToolUse": [
+                {
+                  "matcher": "Edit|Write",
+                  "hooks": [
+                    {
+                      "type": "command",
+                      "command": "echo \"$CLAUDE_TOOL_INPUT\" | jq -r '.file_path // empty' >> claude-activity.log"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+          EOF
       - name: Project Setup
         run: |
           npm run setup
